@@ -667,7 +667,7 @@ body {
   <div class="exchange-card">
     <div class="exchange-row">
       <div class="exchange-label">日圓</div>
-      <input class="exchange-input" type="number" id="jpy-input" value="1000" inputmode="numeric" placeholder="輸入日圓金額">
+      <input class="exchange-input" type="number" id="jpy-input" value="" inputmode="numeric" placeholder="輸入日圓金額">
       <div class="exchange-currency">JPY</div>
     </div>
     <div style="text-align:center;font-size:18px;color:var(--text-light);margin:4px 0;">↓</div>
@@ -1134,7 +1134,7 @@ const jpyInput = document.getElementById('jpy-input');
 const twdResult = document.getElementById('twd-result');
 function calcTWD() {
   const v = parseFloat(jpyInput.value) || 0;
-  twdResult.textContent = (v / RATE).toFixed(0);
+  twdResult.textContent = v ? (v / RATE).toFixed(0) : '';
 }
 jpyInput.addEventListener('input', calcTWD);
 calcTWD();
