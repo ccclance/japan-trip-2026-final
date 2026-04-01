@@ -401,7 +401,7 @@ body {
   overflow: hidden;
   transition: max-height .35s cubic-bezier(0.4,0,0.2,1);
 }
-.day-card.open .day-body { max-height: 600px; }
+.day-card.open .day-body { max-height: 800px; }
 
 .day-content {
   padding: 0 16px 14px;
@@ -505,9 +505,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ── LOADING SPINNER ── */
-.loading { color: var(--text-light); font-size: 12px; text-align: center; padding: 8px; }
-
 /* ── MISC ── */
 .scroll-top-btn {
   position: fixed;
@@ -527,8 +524,6 @@ body {
   z-index: 90;
 }
 .scroll-top-btn.visible { display: flex; }
-
-.divider { height: 0.5px; background: var(--border); margin: 16px 0; }
 
 .info-banner {
   background: #FFF8F3;
@@ -642,7 +637,7 @@ body {
       <div class="hotel-en">SOLASIA residence 北上野</div>
       <div class="hotel-dates">6/26 (五) → 6/30 (二)　共 4 晚</div>
     </div>
-    <a class="map-btn" href="https://maps.google.com/?q=SOLASIA+residence+Kita-Ueno" target="_blank">🗺 地圖</a>
+    <a class="map-btn" href="https://maps.google.com/?q=SOLASIA+residence+北上野" target="_blank">🗺 地圖</a>
   </div>
 
   <div class="section-title">💱 匯率換算 (日圓 ➔ 台幣)</div>
@@ -664,16 +659,12 @@ body {
 </div>
 
 <div id="page-itinerary" class="page">
-
-  <div class="info-banner">💡 點選日期卡片可展開詳細行程，點擊地圖按鈕可直接導航。</div>
+  <div class="info-banner">💡 點選日期卡片可展開詳細行程。</div>
 
   <div class="day-card" data-day="1">
     <div class="day-header" onclick="toggleDay(this)">
       <div class="day-badge">DAY 1</div>
-      <div class="day-title-wrap">
-        <div class="day-title">仙台抵達</div>
-        <div class="day-date">6/23 (二)</div>
-      </div>
+      <div class="day-title-wrap"><div class="day-title">仙台抵達</div><div class="day-date">6/23 (二)</div></div>
       <div class="day-chevron">▼</div>
     </div>
     <div class="day-body">
@@ -681,26 +672,14 @@ body {
         <div class="content-section">
           <div class="content-label">行程</div>
           <ul class="stop-list">
-            <li class="stop-item">
-              <div class="stop-dot"></div>
-              <div class="stop-name">飯店 Check-in（仙台巴哈大飯店）</div>
-              <a class="map-btn" href="https://maps.google.com/?q=Sendai+Grand+Bach+Hotel" target="_blank">🗺</a>
-            </li>
-            <li class="stop-item">
-              <div class="stop-dot"></div>
-              <div class="stop-name">仙台站周邊散步</div>
-              <a class="map-btn" href="https://maps.google.com/?q=Sendai+Station" target="_blank">🗺</a>
-            </li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">飯店 Check-in</div></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">仙台站周邊散步</div></li>
           </ul>
         </div>
         <div class="content-section">
           <div class="content-label">美食</div>
           <ul class="stop-list">
-            <li class="stop-item">
-              <div class="stop-dot"></div>
-              <div class="stop-name">善治郎 仙台站前本店（炭火牛舌）🥩</div>
-              <a class="map-btn" href="https://maps.google.com/?q=Gyutan+Zenjirou+Sendai+Station" target="_blank">🗺</a>
-            </li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">善治郎 仙台站前本店 🥩</div></li>
           </ul>
         </div>
       </div>
@@ -710,10 +689,7 @@ body {
   <div class="day-card" data-day="2">
     <div class="day-header" onclick="toggleDay(this)">
       <div class="day-badge">DAY 2</div>
-      <div class="day-title-wrap">
-        <div class="day-title">仙台職人與靈魂</div>
-        <div class="day-date">6/24 (三)</div>
-      </div>
+      <div class="day-title-wrap"><div class="day-title">仙台職人與靈魂</div><div class="day-date">6/24 (三)</div></div>
       <div class="day-chevron">▼</div>
     </div>
     <div class="day-body">
@@ -721,14 +697,238 @@ body {
         <div class="content-section">
           <div class="content-label">行程</div>
           <ul class="stop-list">
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">金蛇水神社（大蛇神社）🐍</div><a class="map-btn" href="https://maps.google.com/?q=Kanasui+Shrine" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">瑞鳳殿（伊達政宗靈屋）</div><a class="map-btn" href="https://maps.google.com/?q=Zuihoden" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">仙台城跡（騎馬像）🏇</div><a class="map-btn" href="https://maps.google.com/?q=Sendai+Castle+Site" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">金蛇水神社 🐍</div></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">瑞鳳殿</div></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">仙台城跡 🏇</div></li>
           </ul>
         </div>
         <div class="content-section">
           <div class="content-label">美食</div>
           <ul class="stop-list">
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">午餐：New Babe（腰內豬排）🍱</div><a class="map-btn" href="https://maps.google.com/?q=New+Babe+Sendai" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">下午茶：鯛kichi 鯛魚燒 🐟</div><a class="map-btn" href="https://maps.google.com/?q=Taikichi+Sendai" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">麵包超人博物館麵包店 🍞</div><a class="map-btn" href="
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">New Babe（豬排）、鯛魚燒、牛たん閣</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card" data-day="3">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-badge">DAY 3</div>
+      <div class="day-title-wrap"><div class="day-title">松島國寶海景</div><div class="day-date">6/25 (四)</div></div>
+      <div class="day-chevron">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <div class="content-section">
+          <div class="content-label">行程</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">松島海岸搭船 ⛵、五大堂、瑞巖寺</div></li>
+          </ul>
+        </div>
+        <div class="content-section">
+          <div class="content-label">美食</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">炸牡蠣 🦪、烤魚板、章魚仙貝</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card" data-day="4">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-badge">DAY 4</div>
+      <div class="day-title-wrap"><div class="day-title">移動至東京</div><div class="day-date">6/26 (五)</div></div>
+      <div class="day-chevron">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <div class="content-section">
+          <div class="content-label">行程</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">新幹線前往東京 🚅、小網神社、合羽橋</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card" data-day="5">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-badge">DAY 5</div>
+      <div class="day-title-wrap"><div class="day-title">吉卜力與器材尋寶</div><div class="day-date">6/27 (六)</div></div>
+      <div class="day-chevron">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <div class="content-section">
+          <div class="content-label">行程</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">吉卜力美術館 🎨、澀谷二手樂器行巡禮 🎸</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card" data-day="6">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-badge">DAY 6</div>
+      <div class="day-title-wrap"><div class="day-title">鎌倉江之島一日遊</div><div class="day-date">6/28 (日)</div></div>
+      <div class="day-chevron">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <div class="content-section">
+          <div class="content-label">行程</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">灌籃高手平交道 🏀、江之島夕陽 🌅</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card" data-day="7">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-badge">DAY 7</div>
+      <div class="day-title-wrap"><div class="day-title">招財貓與購物</div><div class="day-date">6/29 (一)</div></div>
+      <div class="day-chevron">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <div class="content-section">
+          <div class="content-label">行程</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">豪德寺（招福貓）🐾、木更津 Outlet 🛍</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card" data-day="8">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-badge">DAY 8</div>
+      <div class="day-title-wrap"><div class="day-title">返台</div><div class="day-date">6/30 (二)</div></div>
+      <div class="day-chevron">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <div class="content-section">
+          <div class="content-label">行程</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">11:50 NRT → TPE 起飛 🛫</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="page-food" class="page">
+  <div class="food-city">
+    <div class="food-city-title">🏯 仙台 & 東京精選</div>
+    <div class="food-item">
+      <div class="food-emoji">🥩</div>
+      <div class="food-info"><div class="food-name">善治郎 仙台站前本店</div><div class="food-note">炭火牛舌，仙台必吃！</div></div>
+    </div>
+    <div class="food-item">
+      <div class="food-emoji">🐱</div>
+      <div class="food-info"><div class="food-name">白髭泡芙工房</div><div class="food-note">龍貓造型泡芙</div></div>
+    </div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <button class="nav-btn active" data-page="home" onclick="switchPage('home', this)">
+    <div class="nav-icon">🏠</div><div class="nav-label">首頁</div><div class="nav-dot"></div>
+  </button>
+  <button class="nav-btn" data-page="itinerary" onclick="switchPage('itinerary', this)">
+    <div class="nav-icon">📅</div><div class="nav-label">行程</div><div class="nav-dot"></div>
+  </button>
+  <button class="nav-btn" data-page="food" onclick="switchPage('food', this)">
+    <div class="nav-icon">🍜</div><div class="nav-label">美食</div><div class="nav-dot"></div>
+  </button>
+</nav>
+
+<button class="scroll-top-btn" id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const RATE = 4.97;
+
+function switchPage(name, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function toggleDay(header) {
+  const card = header.closest('.day-card');
+  card.classList.toggle('open');
+}
+
+// Countdown
+function updateCountdown() {
+  const target = new Date('2026-06-23T14:20:00+08:00');
+  const now = new Date();
+  const diff = target - now;
+  if (diff <= 0) {
+    document.getElementById('countdown-num').textContent = '出發囉！';
+    return;
+  }
+  const days = Math.floor(diff / 86400000);
+  document.getElementById('countdown-num').textContent = days + ' 天';
+}
+updateCountdown();
+
+// Exchange Logic
+window.onload = function() {
+  const jpyInput = document.getElementById('jpy-input');
+  const twdInput = document.getElementById('twd-input');
+
+  function calculateTWD() {
+    const v = parseFloat(jpyInput.value) || 0;
+    twdInput.value = Math.round(v / RATE);
+  }
+
+  jpyInput.addEventListener('input', calculateTWD);
+  calculateTWD(); // 初始化
+
+  // Weather
+  fetchWeather();
+};
+
+async function fetchWeather() {
+  const WX_KEY = 'a3a5ff7098ef1f62c8b76d7813e0b58d';
+  const cities = [
+    { id: 'si', name: '仙台', q: 'Sendai,JP' },
+    { id: 'tk', name: '東京', q: 'Tokyo,JP' }
+  ];
+  const ICONS = { '01': '☀️', '02': '🌤', '03': '⛅️', '04': '☁️', '09': '🌧', '10': '🌦', '11': '⛈', '13': '❄️', '50': '🌫' };
+  
+  for (const city of cities) {
+    try {
+      const r = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.q}&appid=${WX_KEY}&units=metric&lang=zh_tw`);
+      const d = await r.json();
+      document.getElementById(`wx-${city.id}-temp`).textContent = Math.round(d.main.temp) + '°';
+      document.getElementById(`wx-${city.id}-desc`).textContent = d.weather[0].description;
+      document.getElementById(`wx-${city.id}-icon`).textContent = ICONS[d.weather[0].icon.slice(0,2)] || '🌡';
+      document.getElementById(`wx-${city.id}-extra`).textContent = `💧 ${d.main.humidity}%　💨 ${Math.round(d.wind.speed * 3.6)} km/h`;
+    } catch(e) {
+      document.getElementById(`wx-${city.id}-desc`).textContent = '無法載入';
+    }
+  }
+}
+
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scroll-top');
+  if (window.scrollY > 300) btn.classList.add('visible');
+  else btn.classList.remove('visible');
+}, { passive: true });
+</script>
+</body>
+</html>
