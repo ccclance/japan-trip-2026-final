@@ -591,6 +591,20 @@ body {
       <div class="weather-desc" id="wx-tk-desc">載入中…</div>
       <div class="weather-extra" id="wx-tk-extra"></div>
     </div>
+  <div class="section-title">💱 匯率換算</div>
+  <div class="exchange-card">
+    <div class="exchange-row">
+      <div class="exchange-label">日圓</div>
+      <input class="exchange-input" type="number" id="jpy-input" value="" inputmode="numeric" placeholder="輸入日圓金額">
+      <div class="exchange-currency">JPY</div>
+    </div>
+    <div style="text-align:center;font-size:18px;color:var(--text-light);margin:4px 0;">↓</div>
+    <div class="exchange-row" style="margin-bottom:0">
+      <div class="exchange-label">台幣</div>
+      <div class="exchange-input" id="twd-result" style="background:var(--primary);border-color:var(--border);color:var(--accent-dark);font-weight:600;display:flex;align-items:center;">201</div>
+      <div class="exchange-currency">TWD</div>
+    </div>
+    <div class="exchange-rate-note">參考匯率：1 JPY = 0.201 TWD</div>
   </div>
 
   <div class="section-title">✈ 航班資訊</div>
@@ -663,21 +677,7 @@ body {
     <a class="map-btn" href="https://maps.google.com/?q=SOLASIA+residence+Kita-Ueno+Tokyo" target="_blank">🗺 地圖</a>
   </div>
 
-  <div class="section-title">💱 匯率換算</div>
-  <div class="exchange-card">
-    <div class="exchange-row">
-      <div class="exchange-label">日圓</div>
-      <input class="exchange-input" type="number" id="jpy-input" value="" inputmode="numeric" placeholder="輸入日圓金額">
-      <div class="exchange-currency">JPY</div>
-    </div>
-    <div style="text-align:center;font-size:18px;color:var(--text-light);margin:4px 0;">↓</div>
-    <div class="exchange-row" style="margin-bottom:0">
-      <div class="exchange-label">台幣</div>
-      <div class="exchange-input" id="twd-result" style="background:var(--primary);border-color:var(--border);color:var(--accent-dark);font-weight:600;display:flex;align-items:center;">201</div>
-      <div class="exchange-currency">TWD</div>
-    </div>
-    <div class="exchange-rate-note">參考匯率：1 JPY = 0.201 TWD</div>
-  </div>
+
 
 </div>
 
@@ -740,20 +740,36 @@ body {
     <div class="day-body">
       <div class="day-content">
         <div class="content-section">
-          <div class="content-label">行程</div>
+          <div class="content-label">🌅 上午 — 西口文化區</div>
           <ul class="stop-list">
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">金蛇水神社（大蛇神社）🐍</div><a class="map-btn" href="https://maps.google.com/?q=金蛇水神社+宮城県" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">瑞鳳殿（伊達政宗靈屋）</div><a class="map-btn" href="https://maps.google.com/?q=瑞鳳殿+仙台" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">09:00 飯店出發 → 西口搭循環巴士 🚌</div></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">瑞鳳殿（伊達政宗靈屋）⛩</div><a class="map-btn" href="https://maps.google.com/?q=瑞鳳殿+仙台" target="_blank">🗺</a></li>
             <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">仙台城跡（騎馬像）🏇</div><a class="map-btn" href="https://maps.google.com/?q=仙台城跡" target="_blank">🗺</a></li>
           </ul>
         </div>
         <div class="content-section">
-          <div class="content-label">美食</div>
+          <div class="content-label">🍱 午餐 — 西口鬧區</div>
           <ul class="stop-list">
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">午餐：New Babe（腰內豬排）🍱</div><a class="map-btn" href="https://maps.google.com/?q=New+Babe+仙台" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">下午茶：鯛kichi 鯛魚燒 🐟</div><a class="map-btn" href="https://maps.google.com/?q=鯛kichi+仙台" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">麵包超人博物館麵包店 🍞</div><a class="map-btn" href="https://maps.google.com/?q=アンパンマンこどもミュージアム+仙台" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">晚餐：牛たん料理 閣 品牌通本店 🐄</div><a class="map-btn" href="https://maps.google.com/?q=牛たん料理+閣+ブランドーム本店+仙台" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">牛たん料理 閣 品牌通本店 🐄</div><a class="map-btn" href="https://maps.google.com/?q=牛たん料理+閣+ブランドーム本店+仙台" target="_blank">🗺</a></li>
+          </ul>
+        </div>
+        <div class="content-section">
+          <div class="content-label">🐍 下午 — 南邊開運區</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">搭 JR 前往岩沼市 🚃</div></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">金蛇水神社（大蛇神社）🐍</div><a class="map-btn" href="https://maps.google.com/?q=金蛇水神社+宮城県岩沼市" target="_blank">🗺</a></li>
+          </ul>
+        </div>
+        <div class="content-section">
+          <div class="content-label">🐟 傍晚 — 西口點心</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">回仙台站西口：鯛kichi 鯛魚燒 🐟</div><a class="map-btn" href="https://maps.google.com/?q=鯛kichi+仙台" target="_blank">🗺</a></li>
+          </ul>
+        </div>
+        <div class="content-section">
+          <div class="content-label">🌙 晚餐 — 東口飯店區</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">New Babe（約德巴希 6F，腰內豬排）🍱</div><a class="map-btn" href="https://maps.google.com/?q=New+Babe+ヨドバシ仙台+6F" target="_blank">🗺</a></li>
           </ul>
         </div>
       </div>
@@ -773,22 +789,27 @@ body {
     <div class="day-body">
       <div class="day-content">
         <div class="content-section">
-          <div class="content-label">行程</div>
+          <div class="content-label">🌊 上午 — 松島海景</div>
           <ul class="stop-list">
             <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">松島海岸搭船 ⛵</div><a class="map-btn" href="https://maps.google.com/?q=松島海岸駅" target="_blank">🗺</a></li>
             <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">五大堂</div><a class="map-btn" href="https://maps.google.com/?q=五大堂+松島" target="_blank">🗺</a></li>
             <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">瑞巖寺（國寶古寺）⛩</div><a class="map-btn" href="https://maps.google.com/?q=瑞巖寺+松島" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">松島魚市場</div><a class="map-btn" href="https://maps.google.com/?q=松島さかな市場" target="_blank">🗺</a></li>
           </ul>
         </div>
         <div class="content-section">
-          <div class="content-label">美食</div>
+          <div class="content-label">🍱 午餐 &amp; 點心 — 松島</div>
           <ul class="stop-list">
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">午餐：漁師的海鮮丼（炸牡蠣）🦪</div><a class="map-btn" href="https://maps.google.com/?q=松島+海鮮丼" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">松島雪竹屋（仙貝）</div><a class="map-btn" href="https://maps.google.com/?q=松島雪竹屋" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">漁師的海鮮丼（炸牡蠣）🦪</div><a class="map-btn" href="https://maps.google.com/?q=松島+海鮮丼" target="_blank">🗺</a></li>
             <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">松島蒲鉾本舗（烤魚板）🐠</div><a class="map-btn" href="https://maps.google.com/?q=松島蒲鉾本舗" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">丸燒章魚仙貝 🐙</div><a class="map-btn" href="https://maps.google.com/?q=丸焼きたこせんべい+松島" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">Panse 麵包店（牡蠣咖哩麵包）🥐</div><a class="map-btn" href="https://maps.google.com/?q=Panse+松島" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">松島雪竹屋（仙貝）🍘</div><a class="map-btn" href="https://maps.google.com/?q=松島雪竹屋" target="_blank">🗺</a></li>
+          </ul>
+        </div>
+        <div class="content-section">
+          <div class="content-label">🛍 下午 15:00 — 仙台港 Outlet</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">⚠️ 帶上寄放的小行李箱！</div></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">中野榮站下車 🚃 → 三井 Outlet Park 仙台港</div><a class="map-btn" href="https://maps.google.com/?q=三井アウトレットパーク+仙台港" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">晚餐於 Outlet 內自由選擇 🍽（保留彈性）</div></li>
           </ul>
         </div>
       </div>
@@ -841,7 +862,7 @@ body {
           <div class="content-label">行程</div>
           <ul class="stop-list">
             <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">吉卜力美術館（10:00 入場）🎨</div><a class="map-btn" href="https://maps.google.com/?q=三鷹の森ジブリ美術館" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">吉祥寺散步 🌿</div><a class="map-btn" href="https://maps.google.com/?q=吉祥寺" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">吉祥寺散策 🌿</div><a class="map-btn" href="https://maps.google.com/?q=吉祥寺" target="_blank">🗺</a></li>
             <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">澀谷二手介面巡寶（樂器行）🎸</div><a class="map-btn" href="https://maps.google.com/?q=渋谷+楽器店" target="_blank">🗺</a></li>
           </ul>
         </div>
@@ -870,12 +891,24 @@ body {
     <div class="day-body">
       <div class="day-content">
         <div class="content-section">
-          <div class="content-label">行程</div>
+          <div class="content-label">🏮 上午 — 鎌倉古都散策</div>
           <ul class="stop-list">
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">鎌倉高校前（灌籃高手平交道）🏀</div><a class="map-btn" href="https://maps.google.com/?q=鎌倉高校前駅" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">長谷寺 🪷</div><a class="map-btn" href="https://maps.google.com/?q=長谷寺+鎌倉" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">江之島神社 ⛩💰</div><a class="map-btn" href="https://maps.google.com/?q=江島神社" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">稚兒之淵夕陽 🌅</div><a class="map-btn" href="https://maps.google.com/?q=稚児ヶ淵+江の島" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">小町通商店街（特色美食與雜貨）🛍</div><a class="map-btn" href="https://maps.google.com/?q=小町通り+鎌倉" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">鶴岡八幡宮（古都象徵神社）⛩</div><a class="map-btn" href="https://maps.google.com/?q=鶴岡八幡宮" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">★ 極樂寺站（韓劇《愛情翻譯難倒我》紅橋朝聖）🌹</div><a class="map-btn" href="https://maps.google.com/?q=極楽寺駅+鎌倉" target="_blank">🗺</a></li>
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">★ 鎌倉大佛 — 高德院（世界知名青銅坐像）🗿</div><a class="map-btn" href="https://maps.google.com/?q=鎌倉大仏+高徳院" target="_blank">🗺</a></li>
+          </ul>
+        </div>
+        <div class="content-section">
+          <div class="content-label">🍽 午餐 — 七里濱海景</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">Espresso D Works 七里濱店（海景第一排）☕</div><a class="map-btn" href="https://maps.google.com/?q=Espresso+D+Works+七里ヶ浜" target="_blank">🗺</a></li>
+          </ul>
+        </div>
+        <div class="content-section">
+          <div class="content-label">🌅 傍晚 18:50 — 江之島夕陽</div>
+          <ul class="stop-list">
+            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">江之島 稚兒之淵（18:50 夕陽）🌅</div><a class="map-btn" href="https://maps.google.com/?q=稚児ヶ淵+江の島" target="_blank">🗺</a></li>
           </ul>
         </div>
       </div>
@@ -898,7 +931,7 @@ body {
           <div class="content-label">行程</div>
           <ul class="stop-list">
             <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">豪德寺（招福貓）🐾</div><a class="map-btn" href="https://maps.google.com/?q=豪徳寺" target="_blank">🗺</a></li>
-            <li class="stop-item"><div class="stop-dot"></div><div class="stop-name">木更津 Outlet 購物 🛍</div><a class="map-btn" href="https://maps.google.com/?q=三井アウトレットパーク+木更津" target="_blank">🗺</a></li>
+
           </ul>
         </div>
       </div>
@@ -948,43 +981,33 @@ body {
     </div>
 
     <div class="food-item">
-      <div class="food-emoji">🍱</div>
+      <div class="food-emoji">🐄</div>
       <div class="food-info">
-        <div class="food-name">New Babe</div>
-        <div class="food-note">腰內豬排定食</div>
-        <span class="food-tag">豬排</span><span class="food-tag">Day 2</span>
+        <div class="food-name">牛たん料理 閣 品牌通本店</div>
+        <div class="food-note">午餐，仙台炭燒牛舌名店，西口鬧區</div>
+        <span class="food-tag">牛舌</span><span class="food-tag">Day 2</span>
       </div>
-      <a class="map-btn" href="https://maps.google.com/?q=New+Babe+仙台" target="_blank">🗺</a>
+      <a class="map-btn" href="https://maps.google.com/?q=牛たん料理+閣+ブランドーム本店+仙台" target="_blank">🗺</a>
     </div>
 
     <div class="food-item">
       <div class="food-emoji">🐟</div>
       <div class="food-info">
         <div class="food-name">鯛kichi 鯛魚燒</div>
-        <div class="food-note">現烤鯛魚燒，下午茶首選</div>
+        <div class="food-note">傍晚點心，仙台站西口</div>
         <span class="food-tag">甜點</span><span class="food-tag">Day 2</span>
       </div>
       <a class="map-btn" href="https://maps.google.com/?q=鯛kichi+仙台" target="_blank">🗺</a>
     </div>
 
     <div class="food-item">
-      <div class="food-emoji">🍞</div>
+      <div class="food-emoji">🍱</div>
       <div class="food-info">
-        <div class="food-name">麵包超人博物館麵包店</div>
-        <div class="food-note">可愛麵包，超人氣！</div>
-        <span class="food-tag">麵包</span><span class="food-tag">Day 2</span>
+        <div class="food-name">New Babe</div>
+        <div class="food-note">晚餐，腰內豬排，約德巴希 6F 東口</div>
+        <span class="food-tag">豬排</span><span class="food-tag">Day 2</span>
       </div>
-      <a class="map-btn" href="https://maps.google.com/?q=アンパンマンこどもミュージアム+仙台" target="_blank">🗺</a>
-    </div>
-
-    <div class="food-item">
-      <div class="food-emoji">🐄</div>
-      <div class="food-info">
-        <div class="food-name">牛たん料理 閣 品牌通本店</div>
-        <div class="food-note">仙台炭燒牛舌名店</div>
-        <span class="food-tag">牛舌</span><span class="food-tag">Day 2</span>
-      </div>
-      <a class="map-btn" href="https://maps.google.com/?q=牛たん料理+閣+ブランドーム本店+仙台" target="_blank">🗺</a>
+      <a class="map-btn" href="https://maps.google.com/?q=New+Babe+ヨドバシ仙台+6F" target="_blank">🗺</a>
     </div>
   </div>
 
@@ -1074,6 +1097,21 @@ body {
       </div>
       <a class="map-btn" href="https://maps.app.goo.gl/PS5QKQdasbg67huR6" target="_blank">🗺</a>
     </div>
+
+  <div class="food-city">
+    <div class="food-city-title">🏮 鎌倉・江之島</div>
+
+    <div class="food-item">
+      <div class="food-emoji">☕</div>
+      <div class="food-info">
+        <div class="food-name">Espresso D Works 七里濱店</div>
+        <div class="food-note">午餐，海景第一排，絕景咖啡廳</div>
+        <span class="food-tag">午餐</span><span class="food-tag">Day 6</span>
+      </div>
+      <a class="map-btn" href="https://maps.google.com/?q=Espresso+D+Works+七里ヶ浜" target="_blank">🗺</a>
+    </div>
+  </div>
+
   </div>
 
 </div>
